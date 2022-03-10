@@ -32,72 +32,66 @@ body, html {
 <body>
 <!-- If you change something in the Navbar you have to change it on each page (sit on top) -->
 <!-- MAKE SURE YOU GET THE RELATIVE PATHS RIGHT FOR THE NAV BAR!!!!-->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="../#home" class="w3-bar-item w3-button w3-wide">RSS Team 10</a>
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="../#about" class="w3-bar-item w3-button">About</a>
-      <a href="./" class="w3-bar-item w3-button"><i class="fa fa-folder"></i> Labs</a>
-      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="w3-bar-item w3-button"><i class="fa fa-camera"></i>Videos</a>
-      <a href="https://github.com/rss2022-10" class="w3-bar-item w3-button"><i class="fa fa-github-square"></i>Github</a>
-    </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-</div>
-
-
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close X</a>
-  <a href="../#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
-  <a href="./" onclick="w3_close()" class="w3-bar-item w3-button">Labs</a>
-  <a href="../#videos" onclick="w3_close()" class="w3-bar-item w3-button">Videos</a>
-  <a href="https://github.com/rss2022-10" onclick="w3_close()" class="w3-bar-item w3-button">Github</a>
-</nav>
-
-<header class="title_img w3-display-container w3-grayscale-min">
-  <div class="w3-display-bottommiddle w3-text-white w3-center">
-    <h1 class="w3-center" style="font-weight:bold">LAB WORK</h1> </br>
-    <p class="w3-center" style="font-weight:bold">What we've done for Robotics: Science and Systems</p>
-  </div>
-</header>
-  <!-- End of repeated content on each page-->
-
-  <!-- Lab Sections -->
-  <div class="w3-row-padding w3-white">
-    <!-- Lab 3 -->
-    <div class="w3-col l6 m6 w3-margin-bottom" style="margin-top:16px;max-width:50%">
-      <div class="w3-card w3-center" style="min-height:600px">
-        </br>
-        <img src="img/racecar.jpg" alt="Survival" style="width:95%" onclick="onClick(this)" class="w3-hover-opacity">
-        <div class="w3-container" style="margin-top:auto">
-          <h3><a href="lab_3">Lab 3: Wall Follower</h3>
-          <p><a href="lab_3"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-info-circle"></i> More info</button></a></p>
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-card" id="myNavbar">
+            <a href="../#home" class="w3-bar-item w3-button w3-wide">RSS Team 10</a>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+                <a href="../#about" class="w3-bar-item w3-button">About</a>
+                <a href="./" class="w3-bar-item w3-button"><i class="fa fa-folder"></i> Labs</a>
+                <a href="../videos" class="w3-bar-item w3-button"><i class="fa fa-camera"></i>Videos</a>
+                <a href="https://github.com/rss2022-10" class="w3-bar-item w3-button"><i class="fa fa-github-square"></i>Github</a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
-      </div>
     </div>
-  <!-- end the lab section -->
-  </div>
 
- <!-- Lab 4 -->
-    <div class="w3-col l6 m6 w3-margin-bottom" style="margin-top:16px;max-width:50%">
-      <div class="w3-card w3-center" style="min-height:600px">
-        </br>
-        <img src="img/line_following.png" alt="Survival" style="width:95%" onclick="onClick(this)" class="w3-hove$
-        <div class="w3-container" style="margin-top:auto">
-          <h3><a href="lab_4">Lab 4: Visual Servoing</h3>
-          <p><a href="lab_4"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-info-circle"$
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close X</a>
+        <a href="../#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+        <a href="./" onclick="w3_close()" class="w3-bar-item w3-button">Labs</a>
+        <a href="../#videos" onclick="w3_close()" class="w3-bar-item w3-button">Videos</a>
+        <a href="https://github.com/rss2022-10" onclick="w3_close()" class="w3-bar-item w3-button">Github</a>
+    </nav>
+    
+    <header class="title_img w3-display-container w3-grayscale-min">
+        <div class="w3-display-bottommiddle w3-text-white w3-center">
+            <h1 class="w3-center" style="font-weight:bold">LAB WORK</h1> </br>
+        <p class="w3-center" style="font-weight:bold">What we've done for Robotics: Science and Systems</p>
         </div>
-      </div>
-    </div>
-  <!-- end the lab section -->
-  </div>
+    </header>
+<!-- End of repeated content on each page-->
 
+<!-- Lab Sections -->
+      <div class="w3-row-padding w3-white">
+        <!-- Lab 3 -->
+        <div class="w3-col l6 m6 w3-margin-bottom" style="margin-top:16px;max-width:50%">
+          <div class="w3-card w3-center" style="min-height:600px">
+            </br>
+            <img src="img/racecar.jpg" alt="Survival" style="width:95%" onclick="onClick(this)" class="w3-hover-opacity">
+            <div class="w3-container" style="margin-top:auto">
+                <h3><a href="lab_3">Lab 3: Wall Follower</a></h3>
+                <p><a href="lab_3"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-info-circle"></i> More info</button></a></p>
+            </div>
+          </div>
+        </div>
+        <!-- Lab 4 -->
+        <div class="w3-col l6 m6 w3-margin-bottom" style="margin-top:16px;max-width:50%">
+            <div class="w3-card w3-center" style="min-height:600px">
+                </br>
+                <img src="img/line.jpg" alt="Line Following" style="width:95%" onclick="onClick(this)" class="w3-hover-opacity">
+                <div class="w3-container" style="margin-top:auto">
+                    <h3><a href="lab_4">Lab 4: Visual Servoing</a></h3>
+                    <p><a href="lab_4"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-info-circle"></i> More info</button></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- end the lab section --> 
 </body>
 
 <!-- Footer -->
